@@ -1,4 +1,4 @@
-/* Reset básico para evitar inconsistencias */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,73 +7,54 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background: #f0f4f8;
+    background-color: #e6ebf1;
     color: #333;
-}
-
-header {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2em;
-}
-
-p {
-    margin: 10px 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 8px;
+/* Contenedor principal */
+.contenedor {
+    max-width: 900px;
+    padding: 20px;
+    background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-/* Diseño responsivo con media queries */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    header h1 {
-        font-size: 1.5em;
-    }
+/* Títulos */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-@media (min-width: 769px) {
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
 }
 
-/* Estilizar enlaces */
-a {
-    color: #007bff;
-    text-decoration: none;
+/* Texto */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Lista de características */
+ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
 }
 
-/* Botones básicos */
-button {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
-button:hover {
-    background: #0056b3;
+ul li strong {
+    color: #2c3e50;
 }
